@@ -186,11 +186,9 @@ if __name__ == "__main__":
     app.debug = True
 
     app.logger.addHandler(console_handler)
-    logger = app.logger     # 获取 Flask 的默认 logger
-
+    logger = app.logger      # 获取 Flask 的默认 logger
     # 添加处理器到 logger
     logger.addHandler(console_handler if app.debug else file_handler)
-
     # 防止 Response 中的中文为 Unicode
     app.config['JSON_AS_ASCII'] = False
     app.run(host="0.0.0.0", port=8888)
