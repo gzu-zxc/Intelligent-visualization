@@ -1,0 +1,102 @@
+## 可用的 chart 列表
+- pie, 饼图
+- doughnut, 环状饼图
+- BarStack, 堆叠条
+- BarHoriz, 柱状图
+- Circle, 圆视图
+- DimArea, 面积图（离散）
+- DimLine, 折线图（离散）
+- FilledMaps, 填充地图
+- Maps, 符号地图
+- IndicatorCard, 指标卡
+- Pies, 饼图
+- WordCloud, 词云图
+- Table, 表格
+- Radar, 雷达图
+- PivotTable, 交叉表
+- Funnel, 漏斗图
+- RectangularTree, 矩形树图
+
+## 可用的 role
+- measure：表示度量值, 取值连续
+- dimension：表示标称值, 取值可数
+
+## 可用的 Geo Role
+- null, 无
+- [Geographical].[Longitude], 经度
+- [Geographical].[Latitude], 纬度
+- [Country].[Name], 国家/地区
+- [State].[Name], 省/自治区
+- [City].[Name], 城市
+- [County].[Name], 县
+
+## 可用的 Date Split
+- null, 无
+- SPLIT_YEAR, 按年划分
+- SPLIT_SEASON_4, 按季划分
+- SPLIT_MONTH_12, 按月划分
+- SPLIT_DAY_31, 按天划分
+- SPLIT_WEEK_57, 按周划分
+- SPLIT_WEEKDAY_7, 按工作日划分
+- SPLIT_HOUR_24, 按小时划分
+- SPLIT_MINUTE_60, 按分钟划分
+- SPLIT_SECOND_60, 按秒划分
+
+## 可用的 filter
+### 数值型过滤器
+- 指定取值范围的过滤器对象：{"type": "valueRange", "min": null, "max": null}
+- 指定特殊取值的过滤器对象：{"type": "specialValue", "value": "nullValue|notNullValue|allValue"}
+
+
+### 通配符过滤器
+- 指定离散字段取值范围的过滤器对象：{"type": "string_match", "method": "contains|startsWith|endWith|equals", "exclude": false}
+
+### 常规过滤器
+- 指定离散字段取值范围的过滤器对象：{"type": "listSelection", "value_list": []}
+- 不做过滤的过滤器对象：{"type": "useAll"}
+
+### 日期过滤器
+-  指定范围的过滤器对象：{"type": "dateRange", "min": "yyyy-MM-dd", "max": "yyyy-MM-dd"}
+-  指定相对日期的过滤器对象：{"type": "relativeDate", "date_type": "year|quarter|month|day|week", "relative": "before|after", "before": null, "after": null}
+
+## 可用的 refline
+### 无参考线对象
+{"type": null}
+
+### 维度
+- 指定常量值为参考线对象：{"type": "constant", "value": null}
+- 指定最小值为参考线对象：{"type": "min"}
+- 指定最大值为参考线对象：{"type": "max"}
+
+### 度量
+- 指定计数总和参考线对象：{"type": "total"}
+- 指定求和值参考线对象：{"type": "sum"}
+- 指定常量值参考线对象：{"type": "constant", value: null}
+- 指定最大值参考线对象：{"type": "max"}
+- 指定最小值参考线对象：{"type": "min"}
+- 指定平均值参考线对象：{"type": "avg"}
+- 指定中位数参考线对象：{"type": "median"}
+
+## 可用的 order_by
+- null, 无
+- desc, 降序
+- asc, 升序
+
+## 可用的聚合函数
+### 维度
+- COUNT
+- COUNTD, 对 DISTINCT 取值计数
+- MAX
+- MIN
+
+### 度量
+- SUM
+- COUNT
+- COUNTD
+- AVG 
+- MAX
+- MIN
+- STDDEV_POP 总体标准差
+- STDDEV_SAMP 样本标准差
+- VAR_POP 总体方差
+- VAR_SAMP 样本方差

@@ -1,0 +1,90 @@
+2023-11-09 09:07:28,013 - ERROR - app.py - log_exception - 1449 - Exception on /ai-assistant/va [POST]
+Traceback (most recent call last):
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:/projects/phd/prompt/main.py", line 62, in va_config
+    raise e
+  File "E:/projects/phd/prompt/main.py", line 57, in va_config
+    config = c2c.to_config()
+  File "E:\projects\phd\prompt\vis\chat.py", line 75, in to_config
+    chart_config = self.chart_config.dump()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 704, in dump
+    _, cfg_type = self.get_config_type()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 136, in get_config_type
+    return ALL_CHARTS[self.chart_name]
+KeyError: None
+2023-11-09 09:51:15,038 - ERROR - app.py - log_exception - 1449 - Exception on /ai-assistant/va [POST]
+Traceback (most recent call last):
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:/projects/phd/prompt/main.py", line 62, in va_config
+    raise e
+  File "E:/projects/phd/prompt/main.py", line 57, in va_config
+    config = c2c.to_config()
+  File "E:\projects\phd\prompt\vis\chat.py", line 75, in to_config
+    chart_config = self.chart_config.dump()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 709, in dump
+    visual_config["mark"] = self.infer_mark()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 425, in infer_mark
+    enc_obj = self._infer_mark_bar(enc_type, visual_role)
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 298, in _infer_mark_bar
+    alias = self.group_by[-1] if len(self.group_by[0]) > 1 else self.group_by[0]
+IndexError: list index out of range
+2023-11-09 09:52:02,440 - ERROR - app.py - log_exception - 1449 - Exception on /ai-assistant/va [POST]
+Traceback (most recent call last):
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:/projects/phd/prompt/main.py", line 62, in va_config
+    raise e
+  File "E:/projects/phd/prompt/main.py", line 57, in va_config
+    config = c2c.to_config()
+  File "E:\projects\phd\prompt\vis\chat.py", line 75, in to_config
+    chart_config = self.chart_config.dump()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 709, in dump
+    visual_config["mark"] = self.infer_mark()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 425, in infer_mark
+    enc_obj = self._infer_mark_bar(enc_type, visual_role)
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 298, in _infer_mark_bar
+    alias = self.group_by[-1] if len(self.group_by[0]) > 1 else self.group_by[0]
+IndexError: list index out of range
+2023-11-09 09:54:11,288 - ERROR - app.py - log_exception - 1449 - Exception on /ai-assistant/va [POST]
+Traceback (most recent call last):
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Env\Virtual\Miniconda3\envs\nl2sql\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:/projects/phd/prompt/main.py", line 62, in va_config
+    raise e
+  File "E:/projects/phd/prompt/main.py", line 57, in va_config
+    config = c2c.to_config()
+  File "E:\projects\phd\prompt\vis\chat.py", line 75, in to_config
+    chart_config = self.chart_config.dump()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 709, in dump
+    visual_config["mark"] = self.infer_mark()
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 425, in infer_mark
+    enc_obj = self._infer_mark_bar(enc_type, visual_role)
+  File "E:\projects\phd\prompt\vis\chart_config.py", line 298, in _infer_mark_bar
+    alias = self.group_by[-1] if len(self.group_by[0]) > 1 else self.group_by[0]
+IndexError: list index out of range

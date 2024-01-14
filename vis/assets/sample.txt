@@ -1,0 +1,8 @@
+## 样例
+表：sale（"产品ID", "客户ID", "客户名称", "细分", "城市", "省自治区", "国家", "地区", "销售额","折扣","利润", "订单数量", "订单年份"）
+
+各个细分产品在各个地区的销量如何？
+
+### 结果
+{"table": "sale", "target": [{"field": "产品ID", "agg": "COUNT", "role": "measure"}], "group_by": ["细分"], "chart": "BarHoriz",
+ "geo_role": null, "date_split": "", "order_by": null, "filter": [{"field": null, "type":"useAll"}], "refline": [{"type": null}]}
